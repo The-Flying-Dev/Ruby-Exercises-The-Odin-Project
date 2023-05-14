@@ -33,6 +33,8 @@ end
 def delete_seat_from_row(chart, row_index, seat_index)
   # take a chart and delete the seat at seat_index of the row at row_index of
   # the chart, then return the chart
+
+  # gets the index of nested array then deletes element inside that array
   chart[row_index].delete_at(seat_index)
   chart
   # Hint: explore the ruby docs to find a method for deleting from an array!
